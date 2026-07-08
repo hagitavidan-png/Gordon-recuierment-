@@ -8,28 +8,19 @@
         body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
         .container { max-width: 600px; margin: 20px auto; background: white; padding: 15px; border-radius: 10px; }
         img { width: 100%; height: auto; display: block; border-radius: 5px; }
-        form { margin-top: 20px; padding: 20px; border-top: 2px solid #eee; }
-        label { display: block; margin-top: 15px; font-weight: bold; }
-        input { display: block; width: 100%; padding: 10px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; }
-        button { display: block; width: 100%; padding: 12px; margin-top: 25px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .form-wrapper { margin-top: 20px; padding: 20px; border-top: 2px solid #eee; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./1783491331593-v2.png" alt="פלייר גורדון">
+        <!-- התמונה המעודכנת ללא המשבצת -->
+        <img src="./1783491331593.png" alt="פלייר גורדון">
 
-        <form action="https://formspree.io/f/xnjkygbe" method="POST" enctype="multipart/form-data">
-            <label>שם מלא:</label>
-            <input type="text" name="name" required>
-
-            <label>מייל ליצירת קשר:</label>
-            <input type="email" name="email" required>
-
-            <label>העלאת קורות חיים (PDF/Word):</label>
-            <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
-
-            <button type="submit">שלח להנהלה</button>
-        </form>
+        <!-- הטופס החדש של Tally -->
+        <div class="form-wrapper">
+            <iframe data-tally-src="https://tally.so/r/2E5yeD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="טופס הרשמה"></iframe>
+            <script async src="https://tally.so/widgets/embed.js"></script>
+        </div>
     </div>
 </body>
 </html>
