@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>הצטרפות לבית חינוך גורדון</title>
     <style>
-        body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-        .container { max-width: 600px; margin: 20px auto; background: white; padding: 15px; border-radius: 10px; }
+        body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { max-width: 600px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        /* התמונה הופכת לקישור */
+        .flyer-link { display: block; width: 100%; cursor: pointer; transition: transform 0.2s; }
+        .flyer-link:hover { transform: scale(1.02); }
         img { width: 100%; height: auto; display: block; border-radius: 5px; }
-        .form-wrapper { margin-top: 20px; padding: 20px; border-top: 2px solid #eee; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./1783491331593.png" alt="פלייר גורדון">
-
-        <div class="form-wrapper">
-            <iframe data-tally-src="https://tally.so/r/2E5yeD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="טופס הרשמה"></iframe>
-            <script async src="https://tally.so/widgets/embed.js"></script>
-        </div>
+        <a href="https://share.google/UwaBIQYcdxD2UkQOW" class="flyer-link" target="_blank">
+            <img src="./1783491331593.png" alt="לחץ כאן להגשת מועמדות">
+        </a>
     </div>
 </body>
 </html>
