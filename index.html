@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>בית חינוך גורדון</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 15px; }
+        img { width: 100%; border-radius: 10px; }
+        form { margin-top: 20px; text-align: right; }
+        input, button { display: block; width: 100%; margin: 10px 0; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1783491150269.png" alt="פלייר גורדון">
+        
+        <h3>הגשת מועמדות</h3>
+        <form action="https://formspree.io/f/הלינק_שלך" method="POST" enctype="multipart/form-data">
+            <label>שם מלא:</label>
+            <input type="text" name="name" required>
+            <label>מייל ליצירת קשר:</label>
+            <input type="email" name="email" required>
+            <label>העלאת קורות חיים (PDF/Word):</label>
+            <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+            <button type="submit">שלח להנהלה</button>
+        </form>
+    </div>
+</body>
+</html>
+
